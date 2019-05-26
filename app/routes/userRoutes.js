@@ -8,7 +8,7 @@ const UserRoutes = function(app) {
   const router = express.Router();
   router.route("/register").post(UserController.register);
   router.route("/login").post(UserController.login);
-  router.route("/logout").delete(UserController.logout);
+  // router.route("/logout").delete(UserController.logout);
   return router;
 };
 module.exports = UserRoutes;
