@@ -37,7 +37,7 @@ const UserController = {
 
        
     },
-    logout:authenticate, function(req,res){
+    logout: function(req,res){
         req.user.removeToken(req.token).then(() => {
             res.status(200).send();
           }, () => {
